@@ -1,0 +1,202 @@
+/* colors
+Light Purple: #E7E9FF
+Bright Pink: #D52BA2
+Blue: #08469E
+Red: #C2352D
+Body Font color: #2F3036 */
+
+/* Globals */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #E7E9FF;
+}
+
+.page-margin {
+    margin: auto 6rem;
+}
+
+h1, h2, h3, h4, h5 {    
+    font-family: 'Sigmar One', cursive;
+    margin: 0;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+    color: #2F3036;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* Header */
+header {
+    background-image: url(../imgs/header-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-layout {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.header-text {
+    text-align: center;
+    width: 50%
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    color: #08469E;
+}
+
+.header-text h2 {
+    font-size: 4rem;
+    color: #C2352D;
+}
+
+.social-bar {
+    background-color: #D52BA2;
+}
+
+.social-bar-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.social-btn a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.social-btn a:hover {
+    color: #2F3036;
+}
+
+/* Main Body */
+.main-body-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main-body-content {
+    padding: 2rem 1rem;
+}
+
+.insta-widget {
+    display: flex;
+    justify-content: center;
+}
+
+.tag-line h3 {
+    font-size: 2rem;
+    color: #08469E;
+}
+
+.tag-line h4 {
+    font-size: 2.5rem;
+    color: #C2352D;
+}
+
+.contact {
+    text-align: left;
+}
+
+.contact h5 {
+    font-size: 2.5rem;
+}
+
+.contact p {
+    font-size: 1rem;
+}
+
+.contact input  {
+    font-size: 1rem;
+    color: #2F3036;
+    border: solid 2px #D52BA2;
+    padding:0.5rem;
+    margin: 0.5rem 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+form .submit-btn {
+    background-color: #D52BA2;
+    border: solid 2px #D52BA2;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+form .submit-btn:hover {
+    background-color: #2F3036;
+}
+
+.crediation {
+    text-align: center;
+    padding:0.5rem;
+    font-size: 1rem;
+}
+
+.crediation a {
+    color: #2F3036;
+}
+
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .page-margin {
+    margin: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .header-text h2 {
+    font-size: 2rem
+  }
+}
